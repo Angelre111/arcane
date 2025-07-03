@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+   
+   <link rel="stylesheet" href="bootstrap/bootstrap.css">
+   <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/section-1.css">
+    
+
+    <title>D</title>
+    <style>
+      
+
+    </style>
+</head>
+<body>
+    <header>
+      <img src="img/home.jpg" class="img-fluid" alt="...">
+      <h1 class="title">ARCANE</h1>
+      <div class="espacio">
+       <p class="slogan">"No basta con darles a las personas lo que necesitan para sobrevivir; hay que darles lo que necesitan para vivir."</p>
+       <p class="slo">Vander, de la serie arcane</p>
+       </div>
+        <div class="intro-message-container">
+          <p class="intro-text">Sumérgete en el corazón de Piltover y Zaun.</p>
+          <a href="#historia" class="btn arcane-btn">Explora la Historia</a>
+        </div>
+    </header>
+      
+    <section class="about-vander-section">
+        <div class="container-fluid clearfix section-2">
+          <section id="historia"></section>
+          <div class="img p-2 row align-items-center">
+            <div class="col-md-6 txt">
+              <h1 class="title2">Titulo 1</h1>
+              <p class="text-start text-break title2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, maxime amet. Excepturi quaerat possimus dolore, nemo libero fuga nesciunt blanditiis, quidem facilis ipsam optio necessitatibus nobis consequatur quod placeat! Cum?</p>
+              <p class="text-start text-break title2">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, maxime amet. Excepturi quaerat possimus dolore, nemo libero fuga nesciunt blanditiis, quidem facilis ipsam optio necessitatibus nobis consequatur quod placeat! Cum?</p>
+              <p class="text-start text-break title2"><b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, maxime amet. Excepturi quaerat possimus dolore, nemo libero fuga nesciunt blanditiis, quidem facilis ipsam optio necessitatibus nobis consequatur quod placeat! Cum?</b></p>
+            </div>
+              <div class="col-md-6 text-end mt-5 mb-5">
+                <img src="img/vander2.jpg" class="img-fluid">
+              </div>
+          </div>
+        </div>
+      
+
+        <div class="container-fluid clearfix section-3">
+          <div class="p-4 row align-items-center">
+            <div class="col-md-6 mt-5 mb-5 text-start es">
+              <iframe class="img-fluid w-100 h-100" width="635" height="415" src="https://www.youtube.com/embed/0qSarZpylxs?si=yje_FJF69_7uVkdV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+              <div class="col-md-6">
+                <h1>Titulo 2</h1>
+                <p class="text-start text-break">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis libero inventore eaque alias fuga facilis modi, animi dolor ipsum incidunt, illo deleniti, quidem molestiae? Obcaecati dolores rem aliquid corrupti quisquam?</p>
+                <p class="text-start text-break"><b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis libero inventore eaque alias fuga facilis modi, animi dolor ipsum incidunt, illo deleniti, quidem molestiae? Obcaecati dolores rem aliquid corrupti quisquam?</b></p>
+              </div>
+          </div>
+        </div>
+
+          <section>
+            <div class="container-fluid clearfix section-4">
+              <div class="img p-2 row align-items-center">
+                  <div class="col-md-6">
+                    <h1>Titulo 3</h1>
+                    <p class="text-start text-break">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, maxime amet. Excepturi quaerat possimus dolore, nemo libero fuga nesciunt blanditiis, quidem facilis ipsam optio necessitatibus nobis consequatur quod placeat! Cum?</p>
+                    <p class="text-start text-break"><b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque, maxime amet. Excepturi quaerat possimus dolore, nemo libero fuga nesciunt blanditiis, quidem facilis ipsam optio necessitatibus nobis consequatur quod placeat! Cum?</b></p>
+                  </div>
+                    <div class="col-md-6 text-end mt-5 mb-5 img2">
+                      <a href="img/jayce.jpg"><img src="img/vi.jpg" class="img-fluid"></a>
+                    </div>
+              </div>
+            </div>
+          </section>
+    </section>
+   
+      
+<script>
+        // JavaScript para el desplazamiento suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault(); // Previene el comportamiento de salto predeterminado
+
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth' // Desplazamiento suave
+                });
+            });
+        });
+    </script>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+</html>

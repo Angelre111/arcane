@@ -1,0 +1,203 @@
+
+/* style.css */
+@font-face {
+    font-family: 'Akira Expanded'; /* El nombre que le darás a tu fuente */
+    src: url('../fonts/akira_expanded_demo-webfont.woff2') format('woff2'), /* Prioriza WOFF2 */
+         url('../fonts/akira_expanded_demo-webfont.woff') format('woff');
+
+    font-weight: normal; /* Asegúrate de que este sea el peso de la fuente que estás usando (normal, bold, etc.) */
+    font-style: normal; /* Asegúrate de que este sea el estilo (normal, italic) */
+    /* Si tienes más variantes (bold, italic), necesitarías otra regla @font-face para cada una con su peso y estilo correspondientes */
+}
+
+
+
+/* Estilos para el contenedor principal (header) */
+header {
+    position: relative; /* Fundamental: Esto hace que el 'header' sea el punto de referencia para el posicionamiento absoluto de sus hijos. */
+    width: 100%; /* Asegura que el header ocupe todo el ancho disponible */
+    overflow: hidden; /* Opcional: Asegura que nada se desborde si el contenido es demasiado grande */
+    display: flex; /* Usamos flexbox para centrar el título más fácilmente */
+    justify-content: center; /* Centra horizontalmente el contenido flex */
+    align-items: center; /* Centra verticalmente el contenido flex */
+    height: auto; /* Permite que la altura se ajuste al contenido, principalmente a la imagen */
+    flex-direction: column;
+}
+
+/* Estilos para la imagen dentro del header */
+header img {
+    width: 100%; /* La imagen ocupará el 100% del ancho de su contenedor (el header) */
+    height: 650px !important; /* Mantiene la relación de aspecto de la imagen */
+    display: block; /* Elimina cualquier espacio extra que pueda aparecer debajo de la imagen */
+}
+
+/* Estilos para el título (h1) */
+header h1.title{
+    position: absolute; /* Fundamental: Saca el h1 del flujo normal y permite posicionarlo con 'top', 'left', etc. */
+    top: 13%; /* Lo posiciona a la mitad de la altura del header */
+    left: 50%; /* Lo posiciona a la mitad del ancho del header */
+    transform: translate(-50%, -50%); /* Crucial: Centra el elemento en sí mismo, moviéndolo la mitad de su propio ancho y alto hacia atrás. */
+    z-index: 2; /* Asegura que el título esté por encima de la imagen (la imagen tendrá un z-index de 1 o menos por defecto) */
+
+    /* Tus estilos de tipografía y color para el título */
+    font-family: 'Akira Expanded', sans-serif; /* O la fuente que hayas configurado */
+    color: #FFFFFF; /* Blanco para máxima legibilidad sobre la imagen */
+    font-size: 5em; /* Ajusta este tamaño según lo grande que quieras el título */
+    text-align: center; /* Asegura que el texto dentro del h1 esté centrado */
+    text-transform: uppercase; /* Para el efecto de Arcane */
+    letter-spacing: 3px; /* Espaciado entre letras para un mejor look */
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.8), /* Un resplandor cian fuerte */
+                 0 0 30px rgba(255, 0, 255, 0.5); /* Y un toque magenta para el efecto neón */
+    white-space: nowrap; /* Evita que el título se divida en varias líneas si es muy largo */
+}
+
+/* Opcional: Si la imagen es muy "cargada" y el texto no se ve bien, puedes añadir un overlay semitransparente */
+
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 1; 
+}
+
+/* ... Tus estilos existentes para header y h1 ... */
+
+@font-face {
+    font-family: 'exo2'; /* El nombre que le darás a tu fuente */
+    src: url('../fonts/exo2-mediumitalic-webfont.woff2') format('woff2'), 
+         url('../fonts/exo2-mediumitalic-webfont.woff') format('woff'); 
+
+    font-weight: normal; /* Asegúrate de que este sea el peso de la fuente que estás usando (normal, bold, etc.) */
+    font-style: normal; /* Asegúrate de que este sea el estilo (normal, italic) */
+    /* Si tienes más variantes (bold, italic), necesitarías otra regla @font-face para cada una con su peso y estilo correspondientes */
+}
+
+.espacio{
+    position: absolute;
+    width: 900px;
+    height: 500px;
+}
+
+header p.slogan {
+    position: absolute; /* Para que se posicione sobre la imagen */
+    top: 40%; /* Ajusta esta posición para que quede debajo del título */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Centrado propio */
+    z-index: 3; /* Asegura que esté por encima de la imagen y, si hay, del overlay */
+    width: 80%; /* Para que el texto no se extienda demasiado en pantallas grandes */
+    max-width: 800px; /* Ancho máximo para legibilidad */
+
+    /* Estilos del texto del eslogan */
+    font-family: 'exo2', sans-serif; /* O 'Inter', 'Rajdhani', 'Exo 2' */
+    color: #FFFFFF; /* ¡COLOR CAMBIADO A BLANCO PURO! */
+    font-size: 2.2em; /* Tamaño relativo al título. Ajusta según necesites */
+    font-weight: 500; /* Un peso medio para buena legibilidad */
+    text-align: justify; /* Centrar el texto del eslogan */
+    text-transform: uppercase; /* Opcional: Para un look más impactante */
+    letter-spacing: 1px; /* Espaciado sutil */
+    line-height: 1.6; /* Espaciado entre líneas si el eslogan es largo */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), /* Resplandor blanco sutil */
+                 0 0 10px rgba(255, 0, 255, 0.2); /* Opcional: un toque de resplandor magenta/púrpura tenue */
+}
+
+header p.slo {
+    position: absolute; /* Para que se posicione sobre la imagen */
+    top: 65%; /* Ajusta esta posición para que quede debajo del título */
+    left: 50%; /* Centrado horizontal */
+    transform: translate(-50%, -50%); /* Centrado propio */
+    z-index: 3; /* Asegura que esté por encima de la imagen y, si hay, del overlay */
+    width: 80%; /* Para que el texto no se extienda demasiado en pantallas grandes */
+    max-width: 800px; /* Ancho máximo para legibilidad */
+
+    /* Estilos del texto del eslogan */
+    font-family: 'exo2', sans-serif; /* O 'Inter', 'Rajdhani', 'Exo 2' */
+    color: #FFFFFF; /* ¡COLOR CAMBIADO A BLANCO PURO! */
+    font-size: 2.2em; /* Tamaño relativo al título. Ajusta según necesites */
+    font-weight: 500; /* Un peso medio para buena legibilidad */
+    text-align: right; /* Centrar el texto del eslogan */
+    text-transform: uppercase; /* Opcional: Para un look más impactante */
+    letter-spacing: 1px; /* Espaciado sutil */
+    line-height: 1.3; /* Espaciado entre líneas si el eslogan es largo */
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), /* Resplandor blanco sutil */
+                 0 0 10px rgba(255, 0, 255, 0.2); /* Opcional: un toque de resplandor magenta/púrpura tenue */
+}
+
+
+header p.slo::before {
+    content: "—  "; /* Añade un guion antes del texto, si no lo pones directamente en el HTML */
+    color: #FFFFFF; /* Color cian para el guion */
+}
+
+.intro-message-container {
+    position: absolute;
+    top: 80%; /* Lo posicionamos más abajo, debajo de la cita */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    width: 90%; /* Ocupa más ancho para móviles, pero... */
+    max-width: 500px; /* ...se restringe en pantallas grandes */
+    
+    /* ELIMINAMOS el fondo y el padding para hacerlo minimalista */
+    background-color: transparent; /* No tiene fondo */
+    padding: 0; /* No tiene padding */
+    border-radius: 0; /* No tiene bordes redondeados */
+    box-shadow: none; /* No tiene sombra */
+}
+
+/* SUMERGETE... Y BOTON*/
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Barlow+Condensed:wght@300;400&display=swap');
+
+.intro-message-container {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+/* Texto "Sumérgete en el corazón..." */
+.intro-text {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.25rem;
+  color: #dcd3ff;
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.2);
+  margin-bottom: 1.5rem;
+}
+
+.arcane-btn{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  color: #ffffff;
+  background-color: #1c1b2f;
+  border: 1px solid #171727;
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 0 10px rgba(92, 207, 216, 0.15);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.arcane-btn:hover {
+    background-color: #2a2a44;
+    color: rgb(6, 7, 10);
+    border: 1px solid #FF00FF;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.6);
+    transition: 0.3s;
+
+}
+.arcane-btn:active {
+    background-color: #2a2a44;
+    color: rgb(6, 7, 10);
+    border: 1px solid #FF00FF;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.6);
+    transition: 0.3s;
+
+}
+
+
