@@ -42,13 +42,35 @@ header h1.title{
     /* Tus estilos de tipografía y color para el título */
     font-family: 'Akira Expanded', sans-serif; /* O la fuente que hayas configurado */
     color: #FFFFFF; /* Blanco para máxima legibilidad sobre la imagen */
-    font-size: 5em; /* Ajusta este tamaño según lo grande que quieras el título */
+    font-size: 5em !important; /* Ajusta este tamaño según lo grande que quieras el título */
     text-align: center; /* Asegura que el texto dentro del h1 esté centrado */
     text-transform: uppercase; /* Para el efecto de Arcane */
     letter-spacing: 3px; /* Espaciado entre letras para un mejor look */
     text-shadow: 0 0 20px rgba(0, 255, 255, 0.8), /* Un resplandor cian fuerte */
                  0 0 30px rgba(255, 0, 255, 0.5); /* Y un toque magenta para el efecto neón */
     white-space: nowrap; /* Evita que el título se divida en varias líneas si es muy largo */
+}
+
+/* Para pantallas medianas */
+@media (max-width: 992px) {
+    header h1.title{
+        font-size: 4.5em; /* Reduce el tamaño */
+    }
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    header h1.title{
+        font-size: 3.5em; /* Reduce aún más */
+    }
+}
+
+/* Para pantallas muy pequeñas (móviles) */
+@media (max-width: 576px) {
+    header h1.title{
+        font-size: 2.5em; /* Tamaño para móvil */
+        letter-spacing: 2px; /* Ajusta el espaciado si es necesario */
+    }
 }
 
 /* Opcional: Si la imagen es muy "cargada" y el texto no se ve bien, puedes añadir un overlay semitransparente */
@@ -78,8 +100,10 @@ header::before {
 
 .espacio{
     position: absolute;
-    width: 900px;
+    width: 750px;
     height: 500px;
+    top: 10%;
+    left: 23%;
 }
 
 header p.slogan {
@@ -106,8 +130,8 @@ header p.slogan {
 
 header p.slo {
     position: absolute; /* Para que se posicione sobre la imagen */
-    top: 65%; /* Ajusta esta posición para que quede debajo del título */
-    left: 50%; /* Centrado horizontal */
+    top: 70%; /* Ajusta esta posición para que quede debajo del título */
+    left: 55%; /* Centrado horizontal */
     transform: translate(-50%, -50%); /* Centrado propio */
     z-index: 3; /* Asegura que esté por encima de la imagen y, si hay, del overlay */
     width: 80%; /* Para que el texto no se extienda demasiado en pantallas grandes */
