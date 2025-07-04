@@ -98,13 +98,7 @@ header::before {
     /* Si tienes más variantes (bold, italic), necesitarías otra regla @font-face para cada una con su peso y estilo correspondientes */
 }
 
-.espacio{
-    position: absolute;
-    width: 750px;
-    height: 500px;
-    top: 10%;
-    left: 23%;
-}
+
 
 header p.slogan {
     position: absolute; /* Para que se posicione sobre la imagen */
