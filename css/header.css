@@ -54,21 +54,21 @@ header h1.title{
 /* Para pantallas medianas */
 @media (max-width: 992px) {
     header h1.title{
-        font-size: 4.5em; /* Reduce el tamaño */
+        font-size: 4.5em !important; /* Reduce el tamaño */
     }
 }
 
 /* Para pantallas pequeñas */
 @media (max-width: 768px) {
     header h1.title{
-        font-size: 3.5em; /* Reduce aún más */
+        font-size: 3.5em !important; /* Reduce aún más */
     }
 }
 
 /* Para pantallas muy pequeñas (móviles) */
 @media (max-width: 576px) {
     header h1.title{
-        font-size: 2.5em; /* Tamaño para móvil */
+        font-size: 2.8em !important; /* Tamaño para móvil */
         letter-spacing: 2px; /* Ajusta el espaciado si es necesario */
     }
 }
@@ -142,6 +142,50 @@ header p.slo {
     line-height: 1.3; /* Espaciado entre líneas si el eslogan es largo */
     text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), /* Resplandor blanco sutil */
                  0 0 10px rgba(255, 0, 255, 0.2); /* Opcional: un toque de resplandor magenta/púrpura tenue */
+}
+
+/* Para pantallas medianas */
+@media (max-width: 992px) {
+    header p.slogan{
+        font-size: 2em !important; /* Reduce el tamaño */
+    }
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    header p.slogan{
+        font-size: 1.6em !important; /* Reduce aún más */
+    }
+}
+
+/* Para pantallas muy pequeñas (móviles) */
+@media (max-width: 576px) {
+    header p.slogan{
+        font-size: 1.3em !important; /* Tamaño para móvil */
+        letter-spacing: 2px; /* Ajusta el espaciado si es necesario */
+    }
+}
+
+@media (max-width: 992px) {
+    header p.slo{
+        font-size: 2em !important; /* Reduce el tamaño */
+    }
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    header p.slo{
+        font-size: 1.6em !important; /* Reduce aún más */
+    }
+}
+
+/* Para pantallas muy pequeñas (móviles) */
+@media (max-width: 576px) {
+    header p.slo{
+        font-size: 1.3em !important; /* Tamaño para móvil */
+        letter-spacing: 2px; /* Ajusta el espaciado si es necesario */
+        top: 63%;
+    }
 }
 
 
