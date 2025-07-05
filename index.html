@@ -17,7 +17,50 @@
 
     <title>D</title>
     <style>
-      
+      /* Para pantallas medianas */
+@media (max-width: 992px) {
+    header p.slogan{
+        font-size: 2em !important; /* Reduce el tamaño */
+    }
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    header p.slogan{
+        font-size: 1.6em !important; /* Reduce aún más */
+    }
+}
+
+/* Para pantallas muy pequeñas (móviles) */
+@media (max-width: 576px) {
+    header p.slogan{
+        font-size: 1.3em !important; /* Tamaño para móvil */
+        letter-spacing: 2px; /* Ajusta el espaciado si es necesario */
+    }
+}
+
+@media (max-width: 992px) {
+    header p.slo{
+        font-size: 2em !important; /* Reduce el tamaño */
+    }
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    header p.slo{
+        font-size: 1.6em !important; /* Reduce aún más */
+    }
+}
+
+/* Para pantallas muy pequeñas (móviles) */
+@media (max-width: 576px) {
+    header p.slo{
+        font-size: 1.3em !important; /* Tamaño para móvil */
+        letter-spacing: 2px; /* Ajusta el espaciado si es necesario */
+        top: 63%;
+    }
+}
+
 
     </style>
 </head>
