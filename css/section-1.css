@@ -1,12 +1,12 @@
 
 html {
-    scroll-behavior: smooth; /* ¡Esta es la clave! */
+    scroll-behavior: smooth; 
 }
 /* Estilos para la sección que contiene la imagen de Vander y el texto */
 /* Asumiendo que esta es una <section id="about-vander"> o similar */
 .about-vander-section {
     background-color: #2F1B3C; /* O #2F1B3C para un púrpura más dominante */
-    padding: 80px 0; /* Relleno superior e inferior para espacio */
+    padding: 40px 0; /* Relleno superior e inferior para espacio */
     position: relative; /* Por si quieres añadir pseudo-elementos o patrones */
     overflow: hidden; /* Para contener cualquier elemento de fondo */
     color: #E0E0E0; /* Color de texto para esta sección */
@@ -40,13 +40,6 @@ html {
     border-radius: 8px; /* Opcional: bordes redondeados */
 }
 
-.about-vander-section iframe {
-    border: 3px solid #FF00FF; /* Un borde magenta vibrante alrededor de la imagen */
-    box-shadow: 0 0 20px rgba(255, 0, 255, 0.6); /* Un brillo magenta para la imagen */
-    border-radius: 8px; /* Opcional: bordes redondeados */
-}
-
-
 /* Ajuste para la columna de texto para que se separe de la imagen en grandes pantallas */
 @media (min-width: 768px) {
     .about-vander-section .col-md-6:first-child {
@@ -57,13 +50,22 @@ html {
     }
 }
 
+.about-vander-section iframe {
+    border: 3px solid #FF00FF; /* Un borde magenta vibrante alrededor de la imagen */
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.6); /* Un brillo magenta para la imagen */
+    border-radius: 8px; /* Opcional: bordes redondeados */
+    margin-top: 10px;
+}
+
+
+
+
 
 
 div.section-2{
     margin-top: 30px;
     height: 100%;
     width: 100%;
-
 }
 
 
@@ -74,12 +76,8 @@ div.section-3{
     background: #2F1B3C;;
     height: 100%;
     width: 100%;
-    margin-top: 30px;
-    margin-bottom: 100px;
-}
-div.es{
-    width: 635px !important;
-    height: 415px !important;
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 
@@ -88,5 +86,5 @@ div.section-4{
     background: #2F1B3C;;
     height: 100%;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 10px;
 }

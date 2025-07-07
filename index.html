@@ -18,48 +18,9 @@
     <title>D</title>
     <style>
       /* Para pantallas medianas */
-@media (max-width: 992px) {
-    header p.slogan{
-        font-size: 2em !important; /* Reduce el tamaño */
-    }
-}
 
 /* Para pantallas pequeñas */
-@media (max-width: 768px) {
-    header p.slogan{
-        font-size: 1.6em !important; /* Reduce aún más */
-    }
-}
 
-/* Para pantallas muy pequeñas (móviles) */
-@media (max-width: 576px) {
-    header p.slogan{
-        font-size: 1.3em !important; /* Tamaño para móvil */
-        letter-spacing: 2px; /* Ajusta el espaciado si es necesario */
-    }
-}
-
-@media (max-width: 992px) {
-    header p.slo{
-        font-size: 2em !important; /* Reduce el tamaño */
-    }
-}
-
-/* Para pantallas pequeñas */
-@media (max-width: 768px) {
-    header p.slo{
-        font-size: 1.6em !important; /* Reduce aún más */
-    }
-}
-
-/* Para pantallas muy pequeñas (móviles) */
-@media (max-width: 576px) {
-    header p.slo{
-        font-size: 1.3em !important; /* Tamaño para móvil */
-        letter-spacing: 2px; /* Ajusta el espaciado si es necesario */
-        top: 63%;
-    }
-}
 
 
     </style>
@@ -99,17 +60,35 @@
       
 
         <div class="container-fluid clearfix section-3">
-          <div class="p-4 row align-items-center">
-            <div class="col-md-6 mt-5 mb-5 text-start es">
-              <iframe class="img-fluid w-100 h-100" width="635" height="415" src="https://www.youtube.com/embed/0qSarZpylxs?si=yje_FJF69_7uVkdV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-              <div class="col-md-6">
-                <h1>Titulo 2</h1>
-                <p class="text-start text-break">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis libero inventore eaque alias fuga facilis modi, animi dolor ipsum incidunt, illo deleniti, quidem molestiae? Obcaecati dolores rem aliquid corrupti quisquam?</p>
-                <p class="text-start text-break"><b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis libero inventore eaque alias fuga facilis modi, animi dolor ipsum incidunt, illo deleniti, quidem molestiae? Obcaecati dolores rem aliquid corrupti quisquam?</b></p>
-              </div>
-          </div>
-        </div>
+  <div class="p-4 row d-flex flex-column flex-md-row align-items-center">
+
+    <!-- Texto primero (arriba en móvil, izquierda en escritorio) -->
+    <div class="col-md-6">
+      <h1>Titulo 2</h1>
+      <p class="text-start text-break">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis libero inventore eaque alias fuga facilis modi, animi dolor ipsum incidunt, illo deleniti, quidem molestiae? Obcaecati dolores rem aliquid corrupti quisquam?
+      </p>
+      <p class="text-start text-break">
+        <b>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis libero inventore eaque alias fuga facilis modi, animi dolor ipsum incidunt, illo deleniti, quidem molestiae? Obcaecati dolores rem aliquid corrupti quisquam?</b>
+      </p>
+    </div>
+
+    <!-- Video segundo (abajo en móvil, derecha en escritorio) -->
+    <div class="col-md-6 mt-4 mt-md-5 mb-5 text-start es">
+      <div class="ratio ratio-16x9">
+        <iframe 
+          src="https://www.youtube.com/embed/0qSarZpylxs?si=yje_FJF69_7uVkdV" 
+          title="YouTube video player" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          referrerpolicy="strict-origin-when-cross-origin" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 
           <section>
             <div class="container-fluid clearfix section-4">
