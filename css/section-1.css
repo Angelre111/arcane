@@ -13,6 +13,9 @@ html {
     position: relative; /* ¡Esencial para los pseudo-elementos! */
 }
 
+.about-vander-section h1.i {
+    margin-right: 5px !important;
+}
 
 
 .about-vander-section h1 {
@@ -22,27 +25,26 @@ html {
     text-align: center; /* Centrar el título de la sección */
     margin-bottom: 40px;
     text-shadow: 0 0 10px rgba(255, 0, 255, 0.5); /* Un brillo sutil */
-    font-size: 4em;
+    font-size: 2em;
 }
 
 @media (max-width: 992px) {
     .about-vander-section h1{
-        font-size: 3.7em !important; /* Reduce el tamaño */
+        font-size: 1.5em !important; /* Reduce el tamaño */
     }
 }
 
 /* Para pantallas pequeñas */
 @media (max-width: 768px) {
     .about-vander-section h1{
-        font-size: 3.2em !important; /* Reduce aún más */
+        font-size: 1em !important; /* Reduce aún más */
     }
 }
 
 /* Para pantallas muy pequeñas (móviles) */
 @media (max-width: 576px) {
     .about-vander-section h1{
-        font-size: 2.7em !important; /* Tamaño para móvil */
-        font-weight: 900;
+        font-size: 1.3em !important; /* Tamaño para móvil */
     }
 }
 
@@ -59,6 +61,7 @@ html {
     border: 3px solid #FF00FF; /* Un borde magenta vibrante alrededor de la imagen */
     box-shadow: 0 0 20px rgba(255, 0, 255, 0.6); /* Un brillo magenta para la imagen */
     border-radius: 8px; /* Opcional: bordes redondeados */
+    margin-left: 25px !important;
 }
 
 /* Ajuste para la columna de texto para que se separe de la imagen en grandes pantallas */
@@ -75,10 +78,15 @@ html {
     border: 3px solid #FF00FF; /* Un borde magenta vibrante alrededor de la imagen */
     box-shadow: 0 0 20px rgba(255, 0, 255, 0.6); /* Un brillo magenta para la imagen */
     border-radius: 8px; /* Opcional: bordes redondeados */
-    margin-top: 10px;
+    margin-top: -5% !important;
 }
 
-
+@media (max-width: 576px) {
+    .about-vander-section iframe.vi {
+        margin-left: -20px !important; /* Más espacio a la derecha del texto */
+    }
+    
+}
 
 
 
